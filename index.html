@@ -1,108 +1,32 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#214f78" />
-  <title>Employee Portal</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#214f78">
+  <meta name="description" content="Employee attendance and HR self-service portal"><title>Employee Portal | Faraz Ahmed</title><link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app-shell">
-    <aside class="sidebar" id="sidebar">
-      <div class="brand"><span class="brand-mark">EP</span><span>Employee Portal</span><button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button></div>
-      <nav class="nav-menu" aria-label="Main navigation">
-        <button class="nav-item active" data-page="Dashboard"><span class="nav-icon">▦</span>Dashboard</button>
-        <button class="nav-item" data-page="Employee Management"><span class="nav-icon">⚙</span>Employee Management <span class="chevron">⌄</span></button>
-        <button class="nav-item" data-page="Requests & Approvals"><span class="nav-icon">▤</span>Requests &amp; Approvals <span class="chevron">⌄</span></button>
-        <button class="nav-item" data-page="Self-Service"><span class="nav-icon">◎</span>Self-Service <span class="chevron">⌄</span></button>
-        <button class="nav-item" data-page="Notifications"><span class="nav-icon">♧</span>Notifications</button>
-      </nav>
-      <div class="sidebar-bottom"><div class="help-dot">?</div><div><strong>Need help?</strong><small>Contact your administrator</small></div></div>
-    </aside>
-
-    <main class="main-area">
-      <header class="topbar">
-        <div class="mobile-brand">Employee Portal</div>
-        <div class="topbar-spacer"></div>
-        <button class="icon-button notification-button" id="notificationButton" aria-label="Notifications">♧<i></i></button>
-        <button class="user-menu" id="userMenu"><span class="user-avatar">FA</span><span>Faraz Ahmed</span><span class="small-chevron">⌄</span></button>
-      </header>
-
-      <div class="page-heading"><div><p class="eyebrow">WELCOME BACK</p><h1 id="pageTitle">Dashboard</h1></div><span class="today-chip" id="todayDate">Friday, November 13, 2026</span></div>
-
-      <section class="dashboard-grid" id="dashboardGrid">
-        <div class="left-column">
-          <article class="card profile-card">
-            <div class="profile-tools">♙</div>
-            <div class="profile-avatar large">FA</div>
-            <span class="status-pill"><span></span>Active</span>
-            <h2>FARAZ AHMED</h2><p class="muted">Graphic Designer</p>
-            <div class="attendance-row"><div><b>Check in</b><span>08:03 AM</span></div><div><b>Shift Timing</b><span>09:00 AM</span></div><div><b>Check out</b><span>—</span></div></div>
-          </article>
-          <article class="card basic-card">
-            <h3>BASIC INFORMATION</h3>
-            <dl class="info-list">
-              <dt>Employee ID:</dt><dd>0408</dd>
-              <dt>Joining Date:</dt><dd>03/30/2026</dd>
-              <dt>Tenure:</dt><dd>8 months</dd>
-              <dt>Age:</dt><dd>26.3 Yrs</dd>
-              <dt>DOB:</dt><dd>07/12/2000</dd>
-              <dt>Blood Group:</dt><dd>—</dd>
-              <dt>Email:</dt><dd>faraz@starsmpb.com</dd>
-              <dt>Department:</dt><dd>Creative</dd>
-            </dl>
-          </article>
-        </div>
-
-        <div class="supervisor-column">
-          <article class="card supervisor-card">
-            <div><h3>SUPERVISOR</h3><h2>SOHAIL<br />AHMED</h2><p class="muted">Web Developer</p></div>
-            <div class="profile-avatar supervisor-avatar">SA</div>
-          </article>
-        </div>
-
-        <div class="right-column">
-          <article class="card time-card">
-            <div class="sun-icon">☼</div><div class="clock" id="clock">11:33:00 PM</div><div class="timezone">(PKT)</div><div class="date-long" id="longDate">Friday&nbsp;&nbsp; November 13, 2026</div>
-          </article>
-          <article class="card leave-card">
-            <h3>AVAILABLE LEAVE</h3>
-            <div class="leave-types">
-              <div class="leave-type"><span>Casual Leave</span><strong>0 <small>/ 1</small></strong><button class="add-leave" data-leave="Casual Leave">＋ Add</button><span class="leave-symbol">♧</span></div>
-              <div class="leave-type"><span>Medical Leave</span><strong>0</strong><button class="add-leave" data-leave="Medical Leave">＋ Add</button><span class="leave-symbol medical">＋</span></div>
-              <div class="leave-type"><span>Short Leave</span><strong>0</strong><button class="add-leave" data-leave="Short Leave">＋ Add</button><span class="leave-symbol">♧</span></div>
-              <div class="leave-type"><span>Unpaid Leaves</span><strong>0</strong><span class="leave-symbol last">♧</span></div>
-            </div>
-          </article>
-          <div class="middle-cards">
-            <article class="card approvals-card"><h3>PENDING APPROVALS</h3><div class="empty-state"><span>✓</span><p>No pending approvals</p></div></article>
-            <article class="card meal-card"><div><h2>Daal Mash &amp; Roti</h2><p class="muted">11/13/2026</p><strong>Upcoming</strong></div><div class="meal-art">🍽️</div></article>
-          </div>
-          <div class="bottom-cards">
-            <article class="card prayer-card"><h3>PRAYER TIME</h3><div class="prayer-times"><div><b>Maghrib</b><span>05:55 PM</span></div><div><b>Isha</b><span>07:30 PM</span></div></div><div class="mosque">☾<br />🕌</div></article>
-            <article class="card break-card"><h3>BREAK</h3><div class="break-item"><b>Tea Break</b><span>11:45PM - 12:00AM</span></div><div class="break-item"><b>Dinner Break</b><span>9:00PM - 9:45PM</span></div></article>
-          </div>
-        </div>
-      </section>
-      <footer>© 2026 Employee Portal <span>Demo dashboard · Customize with your company details</span></footer>
-    </main>
-  </div>
-
-  <div class="modal-backdrop" id="leaveModal" hidden>
-    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close" id="closeModal" aria-label="Close">×</button>
-      <p class="eyebrow">LEAVE REQUEST</p><h2 id="modalTitle">Apply for leave</h2>
-      <form id="leaveForm">
-        <label>Leave type<input id="leaveType" readonly /></label>
-        <div class="form-row"><label>From date<input type="date" id="fromDate" required /></label><label>To date<input type="date" id="toDate" required /></label></div>
-        <label>Reason<textarea id="reason" rows="3" placeholder="Write a short reason..." required></textarea></label>
-        <button class="primary-button" type="submit">Submit request</button>
-      </form>
-      <p class="form-note" id="formNote">Demo only: requests are shown on this device and are not sent to HR.</p>
-    </div>
-  </div>
-  <div class="toast" id="toast" role="status"></div>
-  <script src="app.js"></script>
-</body>
-</html>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><span class="brand-mark">EP</span><span>Employee Portal</span><button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button></div>
+    <nav class="nav-menu" aria-label="Main navigation">
+      <button class="nav-item active" data-page="Dashboard"><span class="nav-icon">▦</span>Dashboard</button>
+      <div class="nav-group"><button class="nav-item" data-page="Employee Management"><span class="nav-icon">♙</span>Employee Management <span class="chevron">⌄</span></button><div class="subnav"><button data-page="Employee Directory">Employee Directory</button><button data-page="Add Employee">Add Employee</button></div></div>
+      <div class="nav-group"><button class="nav-item" data-page="Requests & Approvals"><span class="nav-icon">▤</span>Requests &amp; Approvals <span class="chevron">⌄</span></button><div class="subnav"><button data-page="Leave Requests">Leave Requests</button><button data-page="Loan Requests">Loan Requests</button><button data-page="Resignation Requests">Resignation Requests</button></div></div>
+      <div class="nav-group"><button class="nav-item" data-page="Leave Management"><span class="nav-icon">◷</span>Leave Management <span class="chevron">⌄</span></button><div class="subnav"><button data-page="My Leaves">My Leaves</button><button data-page="Leave Requests">Leave Requests</button></div></div>
+      <div class="nav-group"><button class="nav-item" data-page="Loans & Advances"><span class="nav-icon">▣</span>Loans &amp; Advances <span class="chevron">⌄</span></button><div class="subnav"><button data-page="Loan Requests">Loan Requests</button></div></div>
+      <div class="nav-group"><button class="nav-item" data-page="Self-Service"><span class="nav-icon">◎</span>Self-Service <span class="chevron">⌄</span></button><div class="subnav"><button data-page="My Profile">My Profile</button><button data-page="My Attendance">My Attendance</button><button data-page="Apply Leave">Apply Leave</button><button data-page="Apply Loan">Apply Loan</button><button data-page="Resignation">Resignation</button></div></div>
+      <button class="nav-item" data-page="Notifications"><span class="nav-icon">♧</span>Notifications <span class="nav-count" id="notificationCount">2</span></button>
+    </nav>
+    <div class="sidebar-bottom"><div class="help-dot">?</div><div><strong>Need help?</strong><small>Contact your administrator</small></div></div>
+  </aside>
+  <main class="main-area">
+    <header class="topbar"><button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button><div class="mobile-brand">Employee Portal</div><div class="topbar-spacer"></div><button class="icon-button" id="notificationButton" aria-label="Notifications">♧<i></i></button><button class="user-menu" id="userMenu"><span class="user-avatar">FA</span><span>Faraz Ahmed</span><span>⌄</span></button></header>
+    <div class="page-heading"><div><p class="eyebrow">EMPLOYEE SELF-SERVICE</p><h1 id="pageTitle">Dashboard</h1></div><span class="today-chip" id="todayDate"></span></div>
+    <section id="pageContent" aria-live="polite"></section>
+    <footer>© 2026 Employee Portal <span>Faraz Ahmed · Frontend demo</span></footer>
+  </main>
+</div>
+<div class="modal-backdrop" id="modalBackdrop" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close">×</button><p class="eyebrow" id="modalEyebrow">REQUEST FORM</p><h2 id="modalTitle">Submit request</h2><div id="modalBody"></div></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
